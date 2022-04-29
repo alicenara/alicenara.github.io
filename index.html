@@ -49,11 +49,17 @@
     }
 
     .load-dot {
-      font-size: 80pt;
+      font-size: 69pt;
+      font-family: monospace;
       color: lightgrey;
-      animation-name: bounce;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
+
+      background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      background-size: 400% 100%;
+
+      animation: bounce 3s ease-in-out infinite;
     }
 
     .load-dot:nth-child(2) {
@@ -66,13 +72,16 @@
     @keyframes bounce {
       0% {
         transform: translateY(-10px);
+        background-position: 0 0;
       }
       40% {
         transform: translateY(-50px);
+        background-position: 100% 0;
       }
       80%,
       100% {
         transform: translateY(-10px);
+        background-position: 0 0;
       }
     }
 
