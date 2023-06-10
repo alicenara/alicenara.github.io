@@ -163,19 +163,6 @@
   }
 }
 
-/* Responsive problems */
-
-@media screen and (max-width: 575px) {
-  #pastwork{
-    margin-top: 5px;
-  }
-
-  footer {
-    position: fixed !important;
-    width: 100%;
-  }
-}
-
 /* Normal CSS because it's needed too */
 
 html, body {
@@ -327,4 +314,19 @@ footer {
   background-color: #000000DD;
   text-align: center;
   border-top: greenyellow dashed;
+}
+
+/* Responsive problems */
+
+@media screen and (max-width: 575px) {
+  #pastwork{
+    margin-top: 5px;
+  }
+
+  footer {
+    position: fixed;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
