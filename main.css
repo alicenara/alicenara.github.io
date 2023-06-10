@@ -165,12 +165,13 @@
 
 /* Responsive problems */
 
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
   #pastwork{
     margin-top: 5px;
   }
+
   footer {
-    position: fixed;
+    position: fixed !important;
     width: 100%;
   }
 }
@@ -256,7 +257,7 @@ header h1 {
 }
 
 #introabout::after {
-  font-size: 0.8em;
+  font-size: calc(20px + 1vw);
   animation: 
     typing2 2s steps(60, end),
     beam-blink 1s infinite;
