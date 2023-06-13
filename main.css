@@ -267,7 +267,7 @@ header h1 {
   width: 1em;
 }
 
-.tagscontainer{
+.tagscontainer {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -307,6 +307,8 @@ header h1 {
   display: inline-block;
   color: turquoise;
   padding: 0 6px 0 0;
+  margin-left: -1em;
+  width: 1em;
 }
 
 #studies ul li {
@@ -318,9 +320,14 @@ header h1 {
   content: '\25C6' !important;
 }
 
+#unistuff li::before {
+  font-weight: bold;
+}
+
 #aboutme {
   margin-top: 0;
 }
+
 #extrainfo {
   display: flex;
   flex-wrap: wrap;
@@ -331,6 +338,7 @@ header h1 {
 #ctfs {
   display: none;
 }
+
 #paucast {
   margin: 0;
 }
