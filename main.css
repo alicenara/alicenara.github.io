@@ -221,7 +221,7 @@ header {
   font-size: calc(10px + 1vw);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 20px 10px 10px 0;
+  padding: 20px 0 10px 10px;
 }
 header h1 {
   -webkit-backface-visibility: hidden;
